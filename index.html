@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Search The Cafe
+  </title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url('https://images.unsplash.com/photo-1559305616-3f99cd43e353?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 90%;
+      text-align: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 600px;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    #searchBox {
+      font-size: 16px;
+      padding: 12px;
+      width: 70%;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 6px;
+      box-sizing: border-box;
+      outline: none;
+    }
+
+    #searchBox::placeholder {
+      color: #999;
+    }
+
+    #searchBox:focus {
+      border: 2px solid #3498db;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>
+        Search The cafe
+    </h1>
+    <input type="text" id="searchBox" placeholder="Search for cafes...">
+    <table id="cafeTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+<script src="Task3.js"></script>
+</body>
+</html>
